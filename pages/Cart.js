@@ -72,24 +72,25 @@ export default function Cart() {
                 </Text>
               </Flex>
               <Text pt={5}>Robe Blazer</Text>
-              <Box
+              <Flex
               
                 borderColor={"#E37611"}
                 borderStyle={"solid"}
                 borderWidth={"0,5px"}
-                as={Flex}
+               width={'full'}
                 
                 borderRadius={"4px"}
-                justifyContent={'space-between'}
+                // justifyContent={'space-between'}
               >
                 <Flex>
                 <Button onclick={()=>decrement()} >-</Button>
                 <Input type={'number'} color={'#E37611'} w={'70px'}  value={data2}borderColor={'#F7C29E'} />
                 <Button  onclick={()=>increment()}>+</Button>
                 </Flex>
-                <Text color={'#E37611'}>3500frs</Text>
+                <Text color={'#E37611'}ml={'90%'}>3500frs</Text>
+                
 
-              </Box>
+              </Flex>
             </Box>
           </Flex>
         </Center>

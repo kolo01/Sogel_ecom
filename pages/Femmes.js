@@ -26,11 +26,11 @@ import { useRouter } from "next/router";
 
 // Settings for the slider
 const settings = {
-  dots: true,
+  dots: false,
   infinite: false,
-  speed: 2000,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  speed: 1500,
+  slidesToShow: 3,
+  slidesToScroll: 2,
   initialSlide: 0,
   responsive: [
     {
