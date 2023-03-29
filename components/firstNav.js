@@ -19,7 +19,7 @@ export default function FirstNav() {
           <Input type={'text'} width={'775px'} borderRadius={'66px'} opacity={30} bg={'#cce1d7'} height={'48px'} mb={1}></Input>
           </Stack>
           
-          <Link ml={10} mt={'10px'}> Se connecter</Link>
+          <Link ml={10} mt={'10px'} href={'/Connexion'}> Se connecter</Link>
           <Link ml={10} mt={'10px'}> Inscription</Link>
         </Flex>
     )
