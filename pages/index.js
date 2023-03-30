@@ -11,6 +11,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import FooterR from '@/components/footerResponsif'
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
 import Navbar from "@/components/navbar";
@@ -127,6 +128,7 @@ export default function Home() {
             
         </SimpleGrid>
       </Box>
+      <FooterR/>
     </>
   );
 }

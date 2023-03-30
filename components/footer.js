@@ -1,10 +1,11 @@
-import { Box, Button, Flex, Heading, Input, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Input, Text,Stack, SimpleGrid } from "@chakra-ui/react";
 
 export default function Footer() {
   return (
     <>
-      <Flex justifyContent={"space-between"}>
-        <Box>
+      <Flex justifyContent={"space-between"} width="1300px" >
+        <SimpleGrid >
+        <Box as={Stack}>
           <Heading
             color={"#fbb614"}
             width={"152px"}
@@ -33,14 +34,14 @@ export default function Footer() {
             E-mail : infos@fripchap.com
           </Text>
         </Box>
-        <Box>
+        <Box  as={Stack}>
           <Text fontWeight={500} fontSize="20px">
             Information
           </Text>
           <Text mt={'10px'}>Home</Text>
           <Text>Services</Text>
         </Box>
-        <Box>
+        <Box  as={Stack}>
           <Text fontWeight={500} fontSize="20px">
             Categories
           </Text>
@@ -48,7 +49,7 @@ export default function Footer() {
           <Text>Femme</Text>
           <Text>Enfants</Text>
         </Box>
-        <Box>
+        <Box  as={Stack} mr={10}>
           <Text width={"250px"} fontWeight={"700"} ml="30px" fontSize={"20px"}>
             Recevez des codes promo!
           </Text>
@@ -74,6 +75,7 @@ export default function Footer() {
             valider
           </Button>
         </Box>
+        </SimpleGrid>
       </Flex>
     </>
   );
