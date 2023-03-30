@@ -71,7 +71,7 @@ export default function FirstNav() {
           {" "}
           Se connecter
         </Link>
-        <Link ml={10} mt={"10px"}>
+        <Link ml={10} mt={"10px"} href={"/Inscription"}>
           {" "}
           Inscription
         </Link>
