@@ -76,7 +76,7 @@ export default function FirstNav() {
           fontSize={"32px"}
           lineHeight={"24px"}
           fontWeight={700}
-          ml={"80px"}
+          ml={"10%"}
           mt={"10px"}
         >
           FripChap
@@ -85,7 +85,7 @@ export default function FirstNav() {
           <Flex>
             <Input
               type={"text"}
-              width={'100%'}
+              width={{base:'50%',xl:'678px',lg:'678px'}}
               borderRadius={"66px 0px 0px 66px"}
               opacity={30}
               bg={"#cce1d7"}
