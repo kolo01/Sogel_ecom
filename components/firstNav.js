@@ -21,6 +21,7 @@ export default function FirstNav() {
     <>
       <Flex
         bgColor={"#3e82d7"}
+        flexDirection={'row'}
         w="full"
         height={"40px"}
         justifyContent={"space-between"}
@@ -61,7 +62,8 @@ export default function FirstNav() {
           </Stack>
         </Stack>
       </Flex>
-      <Flex   bg={useColorModeValue('white', 'gray.800')}
+      <Flex 
+        bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
         py={{ base: 2 }}

@@ -120,6 +120,7 @@ export default function Carousel() {
           aria-label="left-arrow"
           colorScheme="messenger"
           borderRadius="full"
+          position={'absolute'}
           mr={10}
           left={side}
           top={top}
@@ -134,7 +135,7 @@ export default function Carousel() {
           aria-label="right-arrow"
           colorScheme="messenger"
           borderRadius="full"
-         
+         position={'absolute'}
           right={side}
           top={top}
           transform={"translate(0%, -50%)"}
@@ -164,9 +165,9 @@ export default function Carousel() {
             pb={5}
             
           >
-            <Box width={'150px'} height={'170px'} pt={10} pl={10}>
+            <Stack width={'150px'} height={'170px'} pt={10} pl={10}>
             <img src={data.images[0]} alt={data.title} />
-            </Box>
+            </Stack>
             
 
             <Box p="6">
@@ -193,7 +194,7 @@ export default function Carousel() {
               >
                 <Text>{data.description.toString()}</Text>
               </Box>
-              <Box>
+              <Box display={'flex'}>
                 {data.price}
                 <Box as="span" color="gray.600" pl={2} fontSize="sm">
                   XOF
